@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610">
+<defs>
+  <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#7C3AED"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="8s" repeatCount="indefinite"/></stop>
+    <stop offset="50%" stop-color="#22D3EE"><animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="8s" repeatCount="indefinite"/></stop>
+    <stop offset="100%" stop-color="#10B981"><animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="8s" repeatCount="indefinite"/></stop>
+  </linearGradient>
+  <radialGradient id="bg1"><stop stop-color="#7C3AED" stop-opacity=".20"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
+  <radialGradient id="bg2"><stop stop-color="#22D3EE" stop-opacity=".16"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+  <clipPath id="clip"><rect x="8" y="8" width="1164" height="594" rx="28"/></clipPath>
+  <mask id="reveal">
+    <rect x="0" y="0" width="1180" height="610" fill="white"/>
+  </mask>
+</defs>
+
+<rect width="1180" height="610" rx="30" fill="#030712"/>
+<circle cx="130" cy="80" r="260" fill="url(#bg1)"><animateTransform attributeName="transform" type="translate" values="0 0;35 20;0 0" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="1050" cy="500" r="300" fill="url(#bg2)"><animateTransform attributeName="transform" type="translate" values="0 0;-30 -25;0 0" dur="12s" repeatCount="indefinite"/></circle>
+
+<g clip-path="url(#clip)">
+  <rect x="8" y="8" width="1164" height="594" rx="28" fill="#0F172A" fill-opacity=".76" stroke="url(#accent)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values=".35;.9;.35" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- animated scanline -->
+  <rect x="20" y="-40" width="1140" height="2" fill="#22D3EE" opacity=".25" filter="url(#soft)">
+    <animate attributeName="y" from="-40" to="650" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- left ASCII portrait -->
+  <g transform="translate(48 90)" font-family="monospace" font-size="13" font-weight="700" fill="url(#accent)">
+    <text x="0" y="0" opacity="0">        .--------.
+      <animate attributeName="opacity" values="0;1" begin=".2s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="22" opacity="0">      /  .----.  \
+      <animate attributeName="opacity" values="0;1" begin=".4s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="44" opacity="0">     |  /      \  |
+      <animate attributeName="opacity" values="0;1" begin=".6s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="66" opacity="0">     | |  ◉  ◉ | |
+      <animate attributeName="opacity" values="0;1" begin=".8s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="88" opacity="0">     | |   __  | |
+      <animate attributeName="opacity" values="0;1" begin="1s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="110" opacity="0">      \ \____/ / 
+      <animate attributeName="opacity" values="0;1" begin="1.2s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="132" opacity="0">       '------'
+      <animate attributeName="opacity" values="0;1" begin="1.4s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="154" opacity="0">      /|      |\
+      <animate attributeName="opacity" values="0;1" begin="1.6s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="176" opacity="0">     / |      | \
+      <animate attributeName="opacity" values="0;1" begin="1.8s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="198" opacity="0">    /  |______|  \
+      <animate attributeName="opacity" values="0;1" begin="2s" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="0" y="220" opacity="0">       /    \
+      <animate attributeName="opacity" values="0;1" begin="2.2s" dur=".5s" fill="freeze"/>
+    </text>
+    <animateTransform attributeName="transform" type="translate" values="48 90;48 84;48 90" dur="5s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="55" y="365" font-family="monospace" font-size="14" fill="#94A3B8">~/developer/profile</text>
+  <text x="55" y="398" font-family="monospace" font-size="23" font-weight="700" fill="#F8FAFC">SYSTEM ONLINE</text>
+  <rect x="55" y="415" width="250" height="2" fill="url(#accent)"/>
+  <text x="55" y="448" font-family="monospace" font-size="13" fill="#64748B">BUILD • CREATE • DEPLOY</text>
+
+  <!-- terminal -->
+  <rect x="405" y="55" width="715" height="500" rx="20" fill="#030712" fill-opacity=".72" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <circle cx="435" cy="82" r="6" fill="#64748B"/><circle cx="455" cy="82" r="6" fill="#64748B"/><circle cx="475" cy="82" r="6" fill="#64748B"/>
+  <text x="510" y="87" font-family="monospace" font-size="12" fill="#64748B">developer@github:~</text>
+
+  <g font-family="monospace">
+    <text x="445" y="140" font-size="17" fill="#22D3EE">Hi 👋</text>
+    <text x="445" y="178" font-size="31" font-weight="700" fill="#F8FAFC">I'm ASHIK</text>
+    <text x="445" y="220" font-size="18" fill="url(#accent)">Software Engineer</text>
+    <text x="445" y="250" font-size="18" fill="url(#accent)">Freelancer</text>
+    <text x="445" y="280" font-size="18" fill="url(#accent)">UI/UX Designer</text>
+    <rect x="445" y="293" width="10" height="20" fill="#22D3EE"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+
+    <text x="445" y="350" font-size="13" fill="#94A3B8">LOCATION     •  India</text>
+    <text x="445" y="376" font-size="13" fill="#94A3B8">FOCUS        •  Building useful software</text>
+    <text x="445" y="402" font-size="13" fill="#94A3B8">PORTFOLIO    •  portfolio-ashik-1502.web.app/</text>
+
+    <text x="445" y="445" font-size="12" fill="#64748B">SKILLS</text>
+    <text x="445" y="470" font-size="14" fill="#F8FAFC">Flutter   HTML   CSS   React</text>
+    <text x="445" y="496" font-size="14" fill="#F8FAFC">Python  Docker   Git   Figma</text>
+
+    <text x="445" y="530" font-size="13" fill="#22D3EE">GitHub   •   LinkedIn   •   Portfolio</text>
+  </g>
+
+  <!-- floating particles -->
+  <g fill="#22D3EE">
+    <circle cx="350" cy="100" r="2"><animate attributeName="cy" values="100;70;100" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="370" cy="480" r="1.5"><animate attributeName="cy" values="480;450;480" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="1090" cy="120" r="2"><animate attributeName="cy" values="120;150;120" dur="6s" repeatCount="indefinite"/></circle>
+  </g>
+</g>
+</svg>
